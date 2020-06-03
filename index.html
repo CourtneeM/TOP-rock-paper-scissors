@@ -19,6 +19,25 @@
             return "scissors";
         }
       }   
+      
+      function playRound(playerSelection, computerSelection) {
+        playerSelection = playerSelection.toLowerCase();
+        if (playerSelection == "rock" || playerSelection == "paper" || playerSelection == "scissors") {
+          if (playerSelection == computerSelection) {
+            return "It's a tie!";
+          } else if ((playerSelection == "rock" && computerSelection == "scissors") || (playerSelection == "scissors" && computerSelection == "paper") || (playerSelection == "paper" && computerSelection == "rock")) {
+            return "You win!";
+          } else {
+            return "You lose!";
+          }
+        }
+        return "That's not a play option. Try again with, `rock, paper, or scissors`";
+      }
+
+      const playerSelection = "rock";
+      const computerSelection = computerPlay();
+
+      playRound(playerSelection, computerSelection);
     </script>
   </body>
 </html>
