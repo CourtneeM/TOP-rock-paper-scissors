@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+p {
+  margin-top: 40px;
+  font-size: 1.2rem;
+}
+
+button {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 18px 0;
+  width: 175px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #222;
+  background-color: #a8c;
+  border: 2px solid #222;
+  cursor: pointer;
+}
+
+#game-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 250px;
+}
+
+#results {
+  margin-top: 100px;
+}
