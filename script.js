@@ -39,7 +39,7 @@ function playRound(playerSelection, computerSelection) {
   resultsDiv
   if (playerSelection == "rock" || playerSelection == "paper" || playerSelection == "scissors") {
     if (playerSelection == computerSelection) { 
-      // Leave empty so it will add to gameCount;
+      // Leave empty so it will add to gameCount
     } else if ((playerSelection == "rock" && computerSelection == "scissors") || (playerSelection == "scissors" && computerSelection == "paper") || (playerSelection == "paper" && computerSelection == "rock")) {
       ++playerWins;
     } else {
